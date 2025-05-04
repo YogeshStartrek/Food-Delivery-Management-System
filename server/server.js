@@ -6,7 +6,7 @@ import userRouter from "./routes/userRoute.js"
 import 'dotenv/config'
 
 const app = express()
-const port =4000
+const port = 4000
 
 app.use(express.json())
 app.use(cors())
