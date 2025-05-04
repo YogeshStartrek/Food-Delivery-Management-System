@@ -5,6 +5,8 @@ import { food_list } from "../../assets/assets";
 const StoreContext = createContext(null);
 
 const StoreContextProvider = ({ children }) => {
+    const url = "http://localhost:4000";
+    const [token,setToken]= useState("");
     
     const [cartItems,setCartItems]=useState({});
 
@@ -46,9 +48,9 @@ const StoreContextProvider = ({ children }) => {
         addToCart,
         removeFromCart,
         getTotalCartAmount,
-        // url,
-        // token,
-        // setToken
+        url,
+        token,
+        setToken
     };
 
     return (
@@ -59,3 +61,5 @@ const StoreContextProvider = ({ children }) => {
 };
 
 export { StoreContext, StoreContextProvider }; // ✅ Export both together
+// export { StoreContext };
+// export default StoreContextProvider;
