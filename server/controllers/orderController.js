@@ -71,7 +71,8 @@ const verifyOrder = async (req,res)=>{
     }
 }
 
-// user order for frontend
+// list all the order by a user based on it's used if for client side
+// this is used to show the orders in /myorders page
 
 const userOrders = async (req,res)=>{
     try {
